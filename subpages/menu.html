@@ -1,0 +1,77 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemini Caffetteria</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="panel">
+        <div id="site-logo">
+          <a href="index.html" rel="home">
+            <img src="../images/logo.jpg" alt="Logo Gemini Caffetteria" class="logo">
+          </a>
+        </div>
+      
+        <div id="site-navigation" class="main-navigation">
+          <ul id="menu-menu" class="menu">
+            <li id="menu-item-1"><a href="../index.html" aria-current="page">Home</a></li>
+            <li id="menu-item-2"><a href="index.html" aria-current="page">Il Locale</a></li>
+            <li id="menu-item-3"><a href="menu.html" aria-current="page">Menu</a></li>
+            <li id="menu-item-4"><a href="index.html" aria-current="page">Dove siamo</a></li>
+            <li id="menu-item-4"><a href="index.html" aria-current="page">Contatti</a></li>
+          </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <header>
+            <h1>MENU DEL GIORNO</h1>
+            <p>Prenota il tuo tavolo online su questo sito</p>
+            <p><strong>NB:</strong> È possibile prenotare fino alle ore 12</p>
+        </header>
+        
+        <form action="prenotazione.php" method="POST">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required>
+        
+            <label for="cognome">Cognome *</label>
+            <input type="text" id="cognome" name="cognome" required>
+        
+            <label for="telefono">Telefono *</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        
+            <label for="ora">Ora *</label>
+            <input type="time" id="ora" name="ora" required>
+        
+            <label for="posti">Numero di posti *</label>
+            <input type="number" id="posti" name="posti" min="1" required>
+        
+            <label for="email">Email (opzionale)</label>
+            <input type="email" id="email" name="email">
+        
+            <p>Piatto Speciale: Tortelli di produzione propria</p>
+        
+            <label for="note">Note</label>
+            <textarea id="note" name="note" rows="4" cols="50"></textarea>
+
+            <button type="submit">Prenota</button>
+            
+        </form>    
+    </main>  
+
+
+    <div class="footer">
+        <p>© 2024 - GEMINI CAFFETTERIA - Tutti i diritti riservati</p>
+    </div>
+    <!-- Javascript -->
+    <script src="../scripts.js"></script>
+</body>
+
+</html>

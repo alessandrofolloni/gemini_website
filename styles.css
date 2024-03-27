@@ -1,0 +1,210 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 16px;
+  background-color: rgba(255, 253, 208);
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sub {
+  font-family: Great Vibes;
+}
+
+.navigation {
+  background-color: #444;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 30px;
+}
+.navigation a {
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  margin:20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+
+.content {
+  padding: 20px;
+  background-color: white;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed; /* Set the position to fixed */
+  bottom: 0; /* Stick the footer to the bottom of the screen */
+  left: 0;
+}
+
+
+
+.panel {
+  background-color: rgb(255, 216, 11);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.nome {
+  justify-content: center;
+  margin-left: 20%;
+}
+
+.logo {
+  justify-content: left;
+  margin-right: 20%;
+  border:0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+
+.slides {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+
+.caption {
+  flex: 1; /* Il testo occupa tutto lo spazio rimanente */
+  padding: 10px;
+  color: white;
+}
+
+
+
+.button-container {
+  position: relative;
+}
+
+
+
+.imgHalf .textHalf {
+  flex: 1; /* Each element takes up equal space */
+}
+
+.textHalf {
+  color: black;
+  padding: 10px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 30px;
+  padding: 100px;
+}
+
+img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto;
+  border-radius: 30%;
+}
+
+.sliding {
+  width: 100%;
+  height:800px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel {
+  margin: 20px;
+}
+
+
+.main-navigation > ul > li {
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+.main-navigation > ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  float: center;
+}
+.main-navigation > ul > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  border: 0;
+  font-style: inherit;
+  font-weight: inherit;
+  color: #333;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altezza del 100% del viewport */
+}
+
+main header {
+  text-align: center; /* Allinea il testo al centro */
+  margin-bottom: 20px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+main form > * {
+  margin-bottom: 10px; /* Aggiungi spazio tra gli elementi del form */
+}
+
+main button[type="submit"] {
+  width: 100%;
+}
+

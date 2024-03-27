@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemini Caffetteria</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+<header class="panel">
+  <div id="site-logo">
+    <a href="index.html" rel="home">
+      <img src="images/logo.jpg" alt="Logo Gemini Caffetteria" class="logo">
+    </a>
+  </div>
+
+  <div id="site-navigation" class="main-navigation">
+    <ul id="menu-menu" class="menu">
+      <li id="menu-item-1"><a href="index.html" aria-current="page">Home</a></li>
+      <li id="menu-item-2"><a href="index.html" aria-current="page">Il Locale</a></li>
+      <li id="menu-item-3"><a href="subpages/menu.html" aria-current="page">Menu</a></li>
+      <li id="menu-item-4"><a href="index.html" aria-current="page">Dove siamo</a></li>
+      <li id="menu-item-4"><a href="index.html" aria-current="page">Contatti</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- Carosello immagini -->
+<div class="carousel">
+  <div class="slides">
+    <div class="slide">
+      <div class="imgHalf"><img src="converted_images/bar.jpg" alt="Image 1" class="sliding"></div>
+      <div class="caption textHalf"> 
+  
+        Le selezioni della Caffeteria Gemini fanno riferimento ad etichette che hanno interessanti recensioni sia italiane (Gambero Rosso, Guida Veronelli ...) che internazionali (Wine Spectator, Robert Parker).
+        Le etichette esposte, Nebbiolo, Dolcetto, Chianti, Fiano di Avellino, Nero D'Avola ... sono visibili in un elegante mobile in legno, corredate di descrizioni relative alla provenienza e all'abbinamento con il cibo, affiancate dal prezzo.
+        
+        Le bottiglie possono essere acquistate o essere servite sia a calice che a bottiglia al tavolo o al banco. In fase di acquisto vi verrà fornito un elegante sacchetto reaglo.
+        
+        Un opportunità per stare insieme, degustando i nobili sapori dell'enologia italiana.</div>
+    </div>
+    <div class="slide">
+      <div class="imgHalf"><img src="converted_images/vini.jpg" alt="Image 2" class="sliding"></div>
+      <div class="caption textHalf">Nel raffinato ambiente della Caffetteria Gemini, potrai rilassarti 
+        scegliendo tra una rosa molto fornita di aperitivi, accompagnati da piattini pieni di delicate leccornie.
+         Diverse le ricette, a base di whisky, di gin, analcolici, digestivi, 
+        dissetanti, afrodisiaci, capaci di garantirvi un piacevole relax ascoltando una piacevole musica in 
+        sottofondo. Un momento per rilassarsi ... e fare nuove amicizie.</div>
+    </div>
+      
+    <!-- Aggiungi altre immagini e testi qui -->
+  </div>
+  <button class="prev" onclick="prevSlide()">&#10094;</button>
+  <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+
+<div class="footer">
+  <p>© 2024 - GEMINI CAFFETTERIA - Tutti i diritti riservati</p>
+</div>
+
+<!-- Javascript -->
+<script src="scripts.js"></script>
+</body>
+</html>
